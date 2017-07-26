@@ -1,0 +1,396 @@
+﻿
+$menu-color: #313234
+
+
+box-sizing: border-box
+	
+	
+.row:before, 
+.row:after 
+	content: ""
+	display: table
+	clear: both
+
+
+body 
+	margin: 0 auto
+	font-family: Helvetica sans-serif
+	background: #E6E6FA
+
+.container 
+	max-width: 1200px
+	margin: 0 auto
+
+
+
+/* menu/ header */
+
+input[type="checkbox"],
+label 
+	font-size: 25px
+	cursor: pointer
+	display: none
+	
+	
+
+header
+	height: 50px
+	width: 100%
+	background: $menu-color
+	position: fixed
+	
+	nav 
+	
+		 img 
+			padding: 10px 0
+
+
+		ul 
+			float: right
+			margin: 5px
+			padding: 0
+			list-style-type: none	
+
+
+			li 
+				display: inline-block
+
+				a 	
+					line-height: 50px
+					padding: 0 20px
+					text-decoration: none
+					color: #FFF
+					text-transform: uppercase
+					&:hover
+						color: #CCC
+						cursor:pointer
+					&:visited
+						color: #E0FFFF
+
+/*jumbotron*/
+	
+.hero 
+	background: url(https://images.pexels.com/photos/38892/pexels-photo-38892.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb)
+	width: 100%
+	height: 450px
+	padding-top: 50px
+	background-size: cover
+
+.slogan 
+	float: right
+	max-width: 800px
+	margin-top: 200px
+	background: rgba(152, 251, 152, 0.8)
+	color: #1e7b1e
+	font-size: 30px
+
+			
+[class*="col-"] 
+	float: left
+	min-height: 0
+	padding: 0
+
+
+.col-1 width: 8.33%
+.col-2 width: 16.66%
+.col-3 width: 25%
+.col-4 width: 33.33%
+.col-5 width: 41.66%
+.col-6 width: 50%
+.col-7 width: 58.33%
+.col-8 width: 66.66%
+.col-9 width: 75%
+.col-10 width: 83.33%
+.col-11 width: 91.66%
+.col-12 width: 100%
+
+.col-offset-0 margin-left: 0
+.col-offset-1 margin-left: 8.33%
+.col-offset-2 margin-left: 16.66%
+.col-offset-3 margin-left: 25%
+.col-offset-4 margin-left: 33.33%
+.col-offset-5 margin-left: 41.66%
+.col-offset-6 margin-left: 50%
+.col-offset-7 margin-left: 58.33%
+.col-offset-8 margin-left: 66.66%
+.col-offset-9 margin-left: 75%
+.col-offset-10 margin-left: 83.33%
+.col-offset-11 margin-left: 91.66%
+	
+	/* 3 ikonki */
+	
+.services 
+	text-align: center
+	margin: 20px 0
+	padding: 15px 30px
+	width: 100%
+
+	
+section 
+	.container 
+		margin: 50px auto
+		width: 100%
+
+
+		.services
+			i 
+				display: inline-block
+				max-width: 1200px
+				width: 100%
+				height: 50px
+				line-height: 50px
+				text-align: center
+				font-size: 40px
+				cursor: pointer
+
+
+			h4 
+				padding: 15px auto
+				font-family: inherit
+				text-transform: uppercase
+
+			p 
+				padding: 5px 15px 
+				font-size: 14px
+				font-weight: 300
+	
+section 
+	.container
+		h1
+			text-transform: uppercase
+			text-align: center
+			color: $menu-color
+
+
+/* gallery*/
+
+.gallery 
+	width: 100%
+
+
+.foto 
+	overflow: hidden
+	position: relative
+	line-height: 0
+	&:hover .layer
+		display: inline-block 	
+		cursor: pointer
+	&:hover .layer i 
+    	display: inline-block
+    	padding-top: 130px
+	    font-size: 35px
+	
+	.layer 
+		position: absolute
+		display: none
+		background: rgba(0,0,0, 0.5)
+		width: 100%
+		height: 100% 
+		text-align: center
+		
+		i
+		&:hover 
+			cursor: pointer
+	
+ /* pracownicy */
+ 
+  
+.button 
+	height: 100px
+	width: 100px
+	margin: 20px auto
+	border-radius: 50%
+	background: rgba(0,0,0, 0.5)
+	cursor: pointer
+
+
+.btn-descrption 
+	margin: 20px auto
+	text-align: center
+	line-height: 20px
+	font-size: 14px
+	font-family: Helvetica, sans-serif
+	color: #1e7b1e
+
+
+/* promocja- sekcja z obrazkiem */
+
+.img-section 
+	background: #A9A9A9
+
+	.promo-img 
+		background: url(https://images.pexels.com/photos/66476/pexels-photo-66476.jpeg?h=350&auto=compress&cs=tinysrgb)
+		margin: 30px 0 15px !important
+		height: 50vh
+	
+	h4 
+		font-family: Helvetica, sans-serif
+		font-size: 16px
+		color: #1e7b1e
+		text-transform: uppercase
+
+		.promotion 
+			padding: 15px
+			overflow: hidden
+			text-overflow: ellipsis
+			font-size: 14px
+			color: white
+			text-align: left
+
+	
+/* liczby */
+
+.number
+	font-size: 28px
+	color: #1e7b1e
+	font-weight: bold
+
+
+.subtitle
+	text-transform: uppercase
+	color: #00BFFF
+	font-weight: bold
+
+/* Footer */
+
+.footer 
+	background: $menu-color
+	margin: 0 auto
+
+
+	.bold 
+		font-size: 12px
+		text-transform: uppercase
+		font-weight: bold
+		color: white
+
+
+	.text 
+		font-size: 12px
+		color: white
+
+
+	.social-media 
+		i 
+			width: 40px
+			height: 40px
+			font-size: 20px
+			margin-bottom: 5px
+			cursor: pointer
+			background: #00BFFF
+			line-height: 40px
+			text-align: center
+
+
+
+.copyrights div 
+	text-align: center
+	padding-top: 20px
+	color: white
+	margin: 0
+
+
+	.copyrights 
+		height: 60px
+		background-color: black
+		margin-top: 0
+
+	
+/* media queries */
+
+
+
+/* for tablets */
+@media(min-width: 768px) and (max-width: 999px) 
+	
+	
+	.col-s-1 width: 8.33%
+    .col-s-2 width: 16.66%
+    .col-s-3 width: 25%
+    .col-s-4 width: 33.33%
+    .col-s-5 width: 41.66%
+    .col-s-6 width: 50%
+    .col-s-7 width: 58.33%
+    .col-s-8 width: 66.66%
+    .col-s-9 width: 75%
+    .col-s-10 width: 83.33%
+    .col-s-11 width: 91.66%
+    .col-s-12 width: 100%
+	
+	.foto 
+		width:50%
+		height: auto
+		&:hover .layer
+			display: none
+	
+	.button 
+		height: 8em
+		width: 8em
+		margin: auto
+		border-radius: 50%
+		cursor: default
+	
+	.number
+		padding: 15px
+	
+	
+	
+
+/* for smartphones */
+@media (max-width: 767px) 
+	
+	header 
+		background: none
+		position: absolute
+	
+		nav 
+			text-align: right
+			padding-right: 10px
+			font-size: 25px
+			
+			ul 
+				float: none
+	
+ 				li 
+					display: block	
+			
+			
+	label 
+		display: block
+	
+	
+	#menu-button:not(:checked) ~ ul 
+		display: none
+	
+	
+	#menu-button:checked ~ ul 
+		display: inline-block
+	
+		li 
+			background: $menu-color
+	
+	
+	.hero 
+		height: 50%
+		width: 100%
+		padding-top: 200px
+	
+	
+	section
+		.slogan 
+			float: none
+			width: 80%
+			margin-top: 80px
+			padding: 0px
+			text-align: center
+			font-size: 0.8em
+	
+
+	[class*="col-"]
+		width: 100%
+			
+	
+	.foto
+		&:hover .layer
+			display: none
+			
